@@ -42,12 +42,12 @@ int sa,sb;
 //fun
     for(i=0;i<sa;i++)
     {tempsize=sb;
-        for(j=0;j<sb;j++)//³Ë
+        for(j=0;j<sb;j++)//ä¹˜
             temsum[j]=b[j]*a[i];
-        for(j=0;j<tempsize;j++)//½øÎ»
+        for(j=0;j<tempsize;j++)//è¿›ä½
             if(temsum[j]>9){if(j==tempsize-1){temsum[j+1]=0;tempsize=sb+1;}temsum[j+1]+=temsum[j]/10;temsum[j]%=10;}
-        //ÎÊÌâ³öÔÚÕâ
-        for(j=0;j<tempsize;j++)//temp¼Óµ½sumÀï
+        //é—®é¢˜å‡ºåœ¨è¿™
+        for(j=0;j<tempsize;j++)//tempåŠ åˆ°sumé‡Œ
         {
             sum[i+j]=sum[i+j]+temsum[j];
             if(i+j+1>size)size=i+j+1;
